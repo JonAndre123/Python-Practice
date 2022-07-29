@@ -1,0 +1,18 @@
+def calculator(num1: int, operation: str, num2: int):
+    match operation:
+        case "+":
+            return num1 + num2
+        case "-":
+            return num1 - num2
+        case "*": 
+            return num1 * num2
+        case "/": 
+            return num1 / num2
+        case _:
+            # raise error if value passed other than asc/desc/none
+            raise ValueError("Incorrect Input")
+
+print(calculator(10, "+", 5))
+print(calculator(10, "-", 5))
+print(calculator(10, "*", 5))
+print(calculator(10, "/", 5))
